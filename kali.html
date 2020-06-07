@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey form</title>
+    <link href="kali.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1 id = "title"> The Survey Form Project</h1>
+        <p id = "description">Survey for Collect Date</p>
+
+
+    </header>
+
+<!-- Main Section -->
+    <main>
+        <form id = "survey-form">
+            <fieldset>
+                <legend>Personalia:</legend>
+                <label for="name" id="name-label">Name:</label><br>
+                <input type="text" id = "name" name="name" placeholder="Full Name" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                <label for="num-age" id="number-label">Age:</label><br>
+                <input type="number" name="age" id="number" min="14" max="100"placeholder="Age"><br>
+                
+                
+                <label for="State">Select State:</label><br>
+                <select name="state" id="dropdown">
+                    <option value="Ab">Ab</option>
+                    <option value="Bc">Bc</option>
+                    <option value="Cd">Cd</option>
+                    <option value="De">De</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br>
+                <hr>
+                <br>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" name="gender" value="male">Male<br>
+                <input type="radio" name="gender" value="female" checked>Female<br>
+                <input type="radio" name="gender" value="Other">Other<br>
+
+                <label for="Fav-Sport">Fav. Sprot:</label>
+                <br>
+                <input type="checkbox" name="Football" id="footbal"checked>Football<br>
+                <input type="checkbox" name="Cricket" id="cricket">Cricket<br>
+                <input type="checkbox" name="Basketball" id="Basketball">Basketball<br>
+                <input type="checkbox" name="Handball" id="handball">HandBall<br>
+                <input type="checkbox" name="Chess" id="chess">Chess<br>
+                <hr width="75%">
+                <br>
+
+                <label for="textarea">Write your Comment:</label><br>
+                <textarea name="comment" id="textarea" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+
+
+
+    </main>
+
+
+<!-- Footer Section -->
+    <footer>
+
+
+
+    </footer>
+</body>
+</html>
