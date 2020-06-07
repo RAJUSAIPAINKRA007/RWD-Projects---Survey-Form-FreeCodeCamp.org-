@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en-IN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Survey-Form</title>
+    <link href="Build-surve-form.css" type="text/css" rel="stylesheet">
+    <meta http-equiv="refresh" content="">
 </head>
 <body>
-    
+    <header>
+        <h1 id="title">Survey Form</h1><br>
+        <p id = "description">let's part in the survey......</p>
+    </header>
+    <br /><hr width="50%" align="left">
+    <main>
+        <fieldset>
+            <legend id="legend">let's Begin:</legend>
+        <form id="survey-form">
+            <label for="FullName" id="name-label">Full Name:</label><br>
+            <input type="text" id="name" name="FullName" placeholder="ex. John Doe" required><br>
+            <label for="email" id="email-label">E-Mail : </label><br>
+            <input type="email" id="email" name="email" placeholder="xyz@email.com" required><br>
+            <label for="number" id="number-label">Enter you Age:</label><br>
+            <input type="number" id="number" name="Age" placeholder="Age" min="20" max="40"><br>
+            <label for="Gender">Select Gender:</label><br>
+            <select value="Gender" name="gender" id="dropdown">
+                <option name="male" id="gender" >Male</option>
+                <option name="female" id="gender" selected>Female</option>
+                <option name="Other" id="gender">Other</option>
+                </select>
+                <br>
+            <label for="comment">please share your Thought with us:</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment Here....."></textarea><br>
+            <input type="button" value="Submit" id="submit">
+
+        </form>
+    </fieldset>
+    </main>
 </body>
 </html>
